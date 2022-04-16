@@ -10162,20 +10162,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1837025463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96cb7e87c9d0d6f49a567eed2bd3cc1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 575f514a58f0d4362a40e65eb72525e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 963194225}
   Player: {fileID: 1837025463}
-  jumpForce: 350
-  speed: 17
-  rb: {fileID: 0}
-  grounded: 0
-  moveForward: 0
-  moveBack: 0
-  moveRight: 0
-  moveLeft: 0
-  isJumped: 0
+  jumpForce: 380
+  speed: 1200
 --- !u!1 &1844639938
 GameObject:
   m_ObjectHideFlags: 0

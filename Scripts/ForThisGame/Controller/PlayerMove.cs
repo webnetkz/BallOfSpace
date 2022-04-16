@@ -87,28 +87,28 @@ void FixedUpdate()
 {
   if(isJumped == true)
   {
-    rb.AddForce(new Vector3(Input.GetAxis("Horizontal") * speed * 4, jumpForce, Input.GetAxis("Vertical") * speed * 4));
+    rb.AddForce(new Vector3(Input.GetAxis("Horizontal") * jumpForce / 8, jumpForce, Input.GetAxis("Vertical") * jumpForce / 8));
     isJumped = false;
   }
 
   if(moveForward)
   {
-    rb.AddForce(MainCamera.transform.forward * speed * Time.deltaTime, ForceMode.VelocityChange);
+    rb.AddForce(MainCamera.transform.forward * speed * Time.deltaTime);
   }
 
   if(moveBack)
   {
-    rb.AddForce(-MainCamera.transform.forward * (speed / 2 ) * Time.deltaTime, ForceMode.VelocityChange);
+    rb.AddForce(-MainCamera.transform.forward * (speed / 2 ) * Time.deltaTime);
   }
 
   if(moveLeft)
   {
-    rb.AddForce(MainCamera.transform.right * (speed / 2) * Time.deltaTime, ForceMode.VelocityChange);
+    rb.AddForce(MainCamera.transform.right * (speed / 2) * Time.deltaTime);
   }
 
   if(moveRight)
   {
-    rb.AddForce(-MainCamera.transform.right * (speed / 2) * Time.deltaTime, ForceMode.VelocityChange);
+    rb.AddForce(-MainCamera.transform.right * (speed / 2) * Time.deltaTime);
   }
 }
      
