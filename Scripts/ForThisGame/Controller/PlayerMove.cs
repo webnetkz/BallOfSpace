@@ -111,5 +111,6 @@ void FixedUpdate()
     rb.AddForce(-MainCamera.transform.right * (speed / 2) * Time.deltaTime);
   }
 }
-     
+
+
 }
