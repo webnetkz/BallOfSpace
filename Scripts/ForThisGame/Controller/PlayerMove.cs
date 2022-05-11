@@ -87,7 +87,7 @@ void FixedUpdate()
 {
   if(isJumped == true)
   {
-    rb.AddForce(new Vector3(Input.GetAxis("Horizontal") * jumpForce / 8, jumpForce, Input.GetAxis("Vertical") * jumpForce / 8));
+    rb.AddForce(new Vector3(Input.GetAxis("Horizontal") * jumpForce / 4, jumpForce, Input.GetAxis("Vertical") * jumpForce / 4));
     isJumped = false;
   }
 
